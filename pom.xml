@@ -32,6 +32,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-freemarker</artifactId>
 		</dependency>
+		<dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>2.6</version>
+        </dependency>
 	</dependencies>
 	<build>
 		<plugins>
@@ -41,6 +46,7 @@
 				<!-- If you are not including it, result would be just a regular jar that you 
 				could run on command line using mvn spring-boot:run [on project root directory]--> 
 				<groupId>org.springframework.boot</groupId>
+				
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
